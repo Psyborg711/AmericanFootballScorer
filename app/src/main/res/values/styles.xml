@@ -6,4 +6,39 @@
         <!-- Background color of buttons in the app -->
         <item name="colorButtonNormal">#D50A0A</item>
     </style>
+    <!-- Test Button Style -->
+    <style name="AppTheme.buttonstyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/eightdp</item>
+        <item name="android:layout_marginLeft">@dimen/twentyfourdp</item>
+        <item name="android:layout_marginRight">@dimen/twentyfourdp</item>
+        <item name="android:textColor">@color/pureWhite</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <!-- Test Text Style1 -->
+    <style name="AppTheme.textstyle1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/sixteendp</item>
+        <item name="android:background">@color/teamBlue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/pureWhite</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- Test Text Style2 -->
+    <style name="AppTheme.textstyle2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/twentyfourdp</item>
+        <item name="android:layout_marginLeft">@dimen/twentyfourdp</item>
+        <item name="android:layout_marginRight">@dimen/twentyfourdp</item>
+        <item name="android:background">@color/pureWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/pureBlack</item>
+        <item name="android:textSize">56sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>

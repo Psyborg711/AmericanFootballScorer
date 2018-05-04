@@ -1,201 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/fbfield" />
-
+        android:background="@drawable/fbfield"
+        tools:ignore="ContentDescription" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
-
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
-
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:background="#013369"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:text="Team A"
-                android:textColor="#ffffff"
-                android:textSize="14sp"
-                android:textStyle="bold" />
-
+                style="@style/AppTheme.textstyle1"
+                android:text="@string/teama" />
             <TextView
                 android:id="@+id/team_a_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:background="#ffffff"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="56sp"
-                android:textStyle="bold" />
-
+                style="@style/AppTheme.textstyle2"
+                android:text="@string/score" />
             <Button
                 android:id="@+id/touchDownA"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                style="@style/AppTheme.buttonstyle"
                 android:onClick="touchdownTeamA"
-                android:text="Touchdown"
-                android:textColor="#ffffff"
-                android:textStyle="bold" />
-
+                android:text="@string/touchdown" />
             <Button
                 android:id="@+id/fieldGoalA"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                style="@style/AppTheme.buttonstyle"
                 android:onClick="fieldgoalTeamA"
-                android:text="Field Goal"
-                android:textColor="#ffffff"
-                android:textStyle="bold" />
-
+                android:text="@string/fieldgoal" />
             <Button
                 android:id="@+id/twoPointConA"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                style="@style/AppTheme.buttonstyle"
                 android:onClick="conversionTeamA"
-                android:text="Conversion"
-                android:textAllCaps="true"
-                android:textColor="#ffffff"
-                android:textStyle="bold" />
-
+                android:text="@string/conversion" />
             <Button
                 android:id="@+id/extraPointA"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                style="@style/AppTheme.buttonstyle"
                 android:onClick="extraPointTeamA"
-                android:text="Extra Point"
-                android:textAllCaps="true"
-                android:textColor="#ffffff"
-                android:textStyle="bold" />
-
+                android:text="@string/extrapoint" />
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-
             <View
                 android:layout_width="10dp"
-                android:layout_height="360dp"
+                android:layout_height="390dp"
                 android:background="#000000" />
-
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
-
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:background="#013369"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:text="Team B"
-                android:textColor="#ffffff"
-                android:textSize="14sp"
-                android:textStyle="bold" />
-
+                style="@style/AppTheme.textstyle1"
+                android:text="@string/teamb" />
             <TextView
                 android:id="@+id/team_b_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:background="#ffffff"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="56sp"
-                android:textStyle="bold" />
-
+                style="@style/AppTheme.textstyle2"
+                android:text="@string/score" />
             <Button
                 android:id="@+id/touchDownB"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                style="@style/AppTheme.buttonstyle"
                 android:onClick="touchdownTeamB"
-                android:text="Touchdown"
-                android:textColor="#ffffff"
-                android:textStyle="bold" />
-
+                android:text="@string/touchdown" />
             <Button
                 android:id="@+id/fieldGoalB"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                style="@style/AppTheme.buttonstyle"
                 android:onClick="fieldgoalTeamB"
-                android:text="Field Goal"
-                android:textColor="#ffffff"
-                android:textStyle="bold" />
-
+                android:text="@string/fieldgoal" />
             <Button
                 android:id="@+id/twoPointConB"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                style="@style/AppTheme.buttonstyle"
                 android:onClick="conversionTeamB"
-                android:text="Conversion"
-                android:textAllCaps="true"
-                android:textColor="#ffffff"
-                android:textStyle="bold" />
-
+                android:text="@string/conversion" />
             <Button
                 android:id="@+id/extraPointB"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                style="@style/AppTheme.buttonstyle"
                 android:onClick="extraPointTeamB"
-                android:text="Extra Point"
-                android:textAllCaps="true"
-                android:textColor="#ffffff"
-                android:textStyle="bold" />
-
+                android:text="@string/extrapoint" />
         </LinearLayout>
-
     </LinearLayout>
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -203,7 +94,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
         android:onClick="resetScores"
-        android:text="reset"
-        android:textColor="#ffffff" />
-
+        android:text="@string/reset"
+        android:textColor="@color/pureWhite" />
 </RelativeLayout>
